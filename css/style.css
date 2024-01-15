@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+span {
+  color: aqua;
+}
+
+.tombol-download {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 8px 35px;
+  background: aqua;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tombol-download:hover {
+  color: aqua;
+  background: transparent;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.content {
+  max-width: 500px;
+  color: rgb(68, 60, 60);
+  font-family: "Poppins", sans-serif;
+}
+
+.content h2 {
+  font-size: 3em;
+}
+
+.content h4 {
+  font-size: 2em;
+}
+
+.content p {
+  padding: 10px 0 40px 0;
+}
+.grup-tombol a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  background: aqua;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.grup-tombol a:hover:nth-child(1) {
+  color: aqua;
+  background: transparent;
+}
+
+.grup-tombol a:nth-child(2) {
+  color: aqua;
+  background: transparent;
+  margin-left: 30px;
+  padding: 10px 30px;
+}
+
+.grup-tombol a:hover:nth-child(2) {
+  color: white;
+  background: aqua;
+}
+
+.sosmed {
+  position: absolute;
+  bottom: 50px;
+}
+
+.sosmed a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border-radius: 50%;
+  margin-right: 22px;
+  text-align: center;
+  line-height: 40px;
+  outline: 3px solid aqua;
+  transition: 0.3s;
+}
+
+.sosmed a:hover {
+  transform: translateY(-5px);
+}
+
+.sosmed a i {
+  color: rgb(68, 60, 60);
+  font-size: 20px;
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
